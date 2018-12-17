@@ -1,8 +1,8 @@
 {
-    "id": "c6f7566a-80d3-432e-9534-78f55f783ba6",
+    "id": "2f034f26-6931-4819-8a02-d1db72e2cc8f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "TypeColor",
+    "name": "CloseDropdownMenu",
     "IsCompatibility": false,
     "IsDnD": false
 }

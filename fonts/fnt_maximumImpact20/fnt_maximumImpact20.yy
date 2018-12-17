@@ -2,7 +2,7 @@
     "id": "7a722af7-bccf-4e10-b6ef-1d2831e6ac70",
     "modelName": "GMFont",
     "mvc": "1.0",
-    "name": "MaximumImpact",
+    "name": "fnt_maximumImpact20",
     "AntiAlias": 1,
     "TTFName": "",
     "bold": false,
