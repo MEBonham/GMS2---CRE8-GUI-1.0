@@ -1,5 +1,9 @@
 /// @description Initialize
 
+// Type
+type = noone;
+
+// Drag and drop variables
 dragging = 0;
 anchorX = 0;
 anchorY = 0;

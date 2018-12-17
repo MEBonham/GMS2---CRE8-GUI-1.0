@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "7a722af7-bccf-4e10-b6ef-1d2831e6ac70",
+            "Value": {
+                "id": "29efb9be-b046-45b8-a34e-72ba73de79eb",
+                "resourcePath": "fonts\\MaximumImpact\\MaximumImpact.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7d62f218-856d-4fc2-a96e-c1ec466383ce",
             "Value": {
                 "id": "cbf16abc-b5d5-4e98-88d6-ce75c992d452",
@@ -167,6 +175,22 @@
             }
         },
         {
+            "Key": "c5fe5f67-2b4b-420a-bb5d-521c42f72eb3",
+            "Value": {
+                "id": "1be170fc-01bb-43fd-bf05-f2c22395a6be",
+                "resourcePath": "objects\\obj_kit\\obj_kit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6f7566a-80d3-432e-9534-78f55f783ba6",
+            "Value": {
+                "id": "4405e866-16af-4603-a398-629cbe750729",
+                "resourcePath": "scripts\\TypeColor\\TypeColor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "fbc06948-f27f-4eca-a96d-edcc8934258f",
@@ -200,7 +224,7 @@
         }
     ],
     "script_order": [
-        
+        "c6f7566a-80d3-432e-9534-78f55f783ba6"
     ],
     "tutorial": ""
 }
