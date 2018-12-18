@@ -55,10 +55,26 @@
             }
         },
         {
+            "Key": "1a6596b1-d9bc-476e-9c41-87274e1056b7",
+            "Value": {
+                "id": "d84c747d-3d63-43f3-8754-3a0bfd867228",
+                "resourcePath": "fonts\\fnt_arial\\fnt_arial.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1f0c6b7d-916a-4f6f-bc1e-fdf15ecaa71e",
             "Value": {
                 "id": "881d1292-4ff1-4569-b4b6-aa665a95eb19",
                 "resourcePath": "objects\\obj_metaEditorLink\\obj_metaEditorLink.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "200e4161-0f45-403a-98ec-798617c1767e",
+            "Value": {
+                "id": "6d082571-5253-4c19-9f0b-0bfc1bba7682",
+                "resourcePath": "objects\\obj_textbox\\obj_textbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -276,6 +292,14 @@
                 "id": "fbc06948-f27f-4eca-a96d-edcc8934258f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d403037d-a8c6-44a8-b1a8-d2b0db49b0c6",
+            "Value": {
+                "id": "b4dd9dff-1eaf-476a-996b-a4324114387c",
+                "resourcePath": "sprites\\spr_textbox\\spr_textbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

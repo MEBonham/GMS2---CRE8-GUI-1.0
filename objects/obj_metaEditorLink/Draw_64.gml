@@ -1,6 +1,4 @@
 /// @description Draw tooltip
-draw_self();
-
 if (hover)
 {
 	var pale_yellow = make_color_rgb(255, 255, 191);
