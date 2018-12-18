@@ -5,3 +5,4 @@ xOffText = 28;
 yOffText = 48;
 fontHere = fnt_arial;
 nextInput = inst_4440F5C0;
+prevInput = inst_7A32B8AD;

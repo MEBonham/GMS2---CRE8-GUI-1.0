@@ -5,3 +5,4 @@ xOffText = 16;
 yOffText = 40;
 fontHere = fnt_maximumImpact20;
 nextInput = inst_2175FC12;
+prevInput = inst_4440F5C0;

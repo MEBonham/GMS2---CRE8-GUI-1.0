@@ -28,7 +28,12 @@ if (active)
 		deleteTimer = 20;
 	}
 	
-	if (keyboard_check_pressed(vk_tab))
+	if (keyboard_check(vk_shift) and keyboard_check_pressed(vk_tab))
+	{
+		active = 0;
+		prevInput.alarm[0] = 1;
+	}
+	else if (keyboard_check_pressed(vk_tab))
 	{
 		active = 0;
 		nextInput.alarm[0] = 1;
