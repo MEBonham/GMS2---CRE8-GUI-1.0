@@ -9,5 +9,5 @@ if (hover)
 	draw_set_font(fnt_maximumImpact20);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
-	draw_text(mouse_x + 6, mouse_y + 16, "Back to character editor");
+	draw_text(mouse_x + 6, mouse_y + 16, specificTooltip);
 }

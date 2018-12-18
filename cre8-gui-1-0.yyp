@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "9ed94e90-febf-49c1-9905-01e8c69fe563",
+            "Value": {
+                "id": "5b70c012-6926-4a4e-8e5a-0724383e790c",
+                "resourcePath": "sprites\\spr_saveDisk\\spr_saveDisk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9ee0d6e6-680c-4c08-88b9-69baa89ea3a3",
             "Value": {
                 "id": "f0e0fee5-63db-4b3b-8e7f-5df085a1c53f",
@@ -295,11 +303,27 @@
             }
         },
         {
+            "Key": "cfcff67d-c7c0-4e42-8a2e-af44fd2db9df",
+            "Value": {
+                "id": "1b96aa9a-b2b6-4282-9581-b77253026e07",
+                "resourcePath": "scripts\\SaveKitInformationToLibrary\\SaveKitInformationToLibrary.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d403037d-a8c6-44a8-b1a8-d2b0db49b0c6",
             "Value": {
                 "id": "b4dd9dff-1eaf-476a-996b-a4324114387c",
                 "resourcePath": "sprites\\spr_textbox\\spr_textbox.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4bedccc-4765-4f70-af8e-cc8c715c392e",
+            "Value": {
+                "id": "5c65218c-5ae9-4f37-88c4-f81a49e49521",
+                "resourcePath": "objects\\obj_saveButton\\obj_saveButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -345,7 +369,8 @@
     ],
     "script_order": [
         "c6f7566a-80d3-432e-9534-78f55f783ba6",
-        "2f034f26-6931-4819-8a02-d1db72e2cc8f"
+        "2f034f26-6931-4819-8a02-d1db72e2cc8f",
+        "cfcff67d-c7c0-4e42-8a2e-af44fd2db9df"
     ],
     "tutorial": ""
 }
