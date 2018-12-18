@@ -3,6 +3,7 @@ draw_self();
 
 var xTopLeft = x - sprite_width / 2;
 var yTopLeft = y - sprite_height / 2;
+var lineHeight = font_get_size(fontHere) * 1.25;
 
 if (active)
 {
@@ -18,9 +19,10 @@ draw_text(xTopLeft, yTopLeft + 8, name);
 
 draw_set_color(ColorByType(type));
 draw_set_font(fontHere);
-draw_set_valign(fa_center);
+draw_set_valign(fa_bottom);
 draw_text_ext(xTopLeft + xOffText,
-	yTopLeft + yOffText,
+	yTopLeft + yOffText + (lineHeight * string_count("\n", text)),
+	//yTopLeft + yOffText + font_get_size(fontHere),
 	text,
-	font_get_size(fontHere) * 1.25,
+	lineHeight,
 	sprite_width - 40);
