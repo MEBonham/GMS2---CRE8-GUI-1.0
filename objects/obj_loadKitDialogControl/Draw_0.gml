@@ -1,4 +1,4 @@
-/// @description Draw dialog title, screenshot
+/// @description Draw dialog title
 
 draw_set_color(ColorByType("kit"));
 draw_set_font(fnt_maximumImpact30);

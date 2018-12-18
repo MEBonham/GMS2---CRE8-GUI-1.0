@@ -1,2 +1,2 @@
 /// @description Initialize
-screenshot = -1;
+scriptOnOptionClick = 1;

@@ -45,6 +45,11 @@ if (kitName != "")
 
 	// Clean up leftover ds_map(s)
 	ds_map_destroy(kitLibraryMap);
+
+	with (obj_textbox)
+	{
+		text = "";
+	}
 }
 else
 {
