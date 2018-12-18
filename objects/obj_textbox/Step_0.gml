@@ -22,6 +22,12 @@ if (active)
 		keyboard_string = "";
 		deleteTimer = 20;
 	}
+	
+	if (keyboard_check_pressed(vk_tab))
+	{
+		active = 0;
+		nextInput.alarm[0] = 1;
+	}
 }
 
 // Increment backspace timer

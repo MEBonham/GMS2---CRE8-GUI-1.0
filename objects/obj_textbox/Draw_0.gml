@@ -4,6 +4,12 @@ draw_self();
 var xTopLeft = x - sprite_width / 2;
 var yTopLeft = y - sprite_height / 2;
 
+if (active)
+{
+	draw_set_color(c_white);
+	draw_circle(xTopLeft + 5, yTopLeft + 5, 3, false);
+}
+
 draw_set_color(c_black);
 draw_set_font(fnt_maximumImpact20);
 draw_set_halign(fa_left);
