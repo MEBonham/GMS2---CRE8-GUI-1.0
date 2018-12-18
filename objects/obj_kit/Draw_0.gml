@@ -1,4 +1,4 @@
-/// @description Draw including info
+/// @description Draw, including info
 draw_self();
 
 draw_set_color(ColorByType(type));
