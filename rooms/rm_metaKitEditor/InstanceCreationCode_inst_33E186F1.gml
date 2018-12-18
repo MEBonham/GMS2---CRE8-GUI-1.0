@@ -1,0 +1,3 @@
+
+specificTooltip = "Cancel";
+specificScript = CloseLoadKitDialog;
