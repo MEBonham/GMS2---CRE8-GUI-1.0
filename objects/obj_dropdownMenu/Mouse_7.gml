@@ -5,7 +5,7 @@ if (clickStart)
 	if (!open)
 	{
 		var yOffset = 0;
-		for (var i = 0; i < array_length_1d(menuOptions); i += 1)
+		for (var i = 0; i < array_length_1d(menuOptions); i++)
 		{
 			yOffset += sprite_height;
 			currentOpenOptions[i] =
@@ -14,6 +14,7 @@ if (clickStart)
 			currentOpenOptions[i].text = menuOptions[i];
 			currentOpenOptions[i].index = i;
 			currentOpenOptions[i].depth -= 1;
+			currentOpenOptions[i].image_xscale = image_xscale;
 			
 			if (scriptOnOptionClick)
 			{

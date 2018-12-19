@@ -25,4 +25,4 @@ draw_text_ext(xTopLeft + xOffText,
 	//yTopLeft + yOffText + font_get_size(fontHere),
 	text,
 	lineHeight,
-	sprite_width - 40);
+	sprite_width - 64);

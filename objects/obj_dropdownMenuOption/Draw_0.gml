@@ -12,8 +12,22 @@ if (hover)
 	draw_set_alpha(1);
 }
 
-draw_set_font(fnt_maximumImpact20);
-draw_set_color(ColorByType(string_lower(text)));
+if (customFont)
+{
+	draw_set_font(customFont);
+}
+else
+{
+	draw_set_font(fnt_maximumImpact20);
+}
+if (customColor)
+{
+	draw_set_color(customColor);
+}
+else
+{
+	draw_set_color(ColorByType(string_lower(text)));
+}
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(x, y + 1, text);

@@ -1,18 +1,19 @@
 var name = argument0[0];
-var category = argument0[2];
+var _category = argument0[2];
+show_debug_message(_category);
 
 var file;
-switch (category)
+switch (_category)
 {
 	case "Kit":
-		file = file_text_open_read(working_directory + "\kit_library.txt");
+		file = file_text_open_read(working_directory + "kit_library.txt");
 		break;
 	case "Feat":
-		file = file_text_open_read(working_directory + "\feat_library.txt");
+		file = file_text_open_read(working_directory + "feat_library.txt");
 		break;
 	case "Talent":
 	default:
-		file = file_text_open_read(working_directory + "\talent_library.txt");
+		file = file_text_open_read(working_directory + "talent_library.txt");
 }
 if (file == -1)
 {
@@ -26,3 +27,18 @@ while (!file_text_eof(file))
 }
 file_text_close(file);
 var libraryMap = json_decode(str);
+
+show_debug_message(str);
+show_debug_message(name);
+var abilityInfo = ds_map_find_value(libraryMap, name);
+ds_map_replace(abilityInfo, "name", name);
+
+with (obj_abilityInfoDisplayControl)
+{
+	if (contents and (contents != abilityInfo))
+	{
+		ds_map_destroy(contents);
+	}
+	contents = abilityInfo;
+	category = _category;
+}

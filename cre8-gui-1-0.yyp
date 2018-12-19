@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "71d23585-d5be-4b10-9344-7c319229148c",
+            "Value": {
+                "id": "2321e43a-5562-4a71-8956-2311d6a07d1e",
+                "resourcePath": "objects\\obj_abilityInfoDisplayControl\\obj_abilityInfoDisplayControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7a722af7-bccf-4e10-b6ef-1d2831e6ac70",
             "Value": {
                 "id": "29efb9be-b046-45b8-a34e-72ba73de79eb",

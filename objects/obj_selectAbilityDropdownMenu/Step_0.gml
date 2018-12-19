@@ -3,20 +3,24 @@ if (category != parentMenu.menuOptions[parentMenu.activeIndex])
 {
 	// Set category anew
 	category = parentMenu.menuOptions[parentMenu.activeIndex];
+	otherArgs = category;
+	
+	// Close this menu
+	CloseDropdownMenu(id);
 	
 	// Load information on correct category of ability
 	var file;
 	switch (category)
 	{
 		case "Kit":
-			file = file_text_open_read(working_directory + "\\kit_library.txt");
+			file = file_text_open_read(working_directory + "kit_library.txt");
 			break;
 		case "Feat":
-			file = file_text_open_read(working_directory + "\\feat_library.txt");
+			file = file_text_open_read(working_directory + "feat_library.txt");
 			break;
 		case "Talent":
 		default:
-			file = file_text_open_read(working_directory + "\\talent_library.txt");
+			file = file_text_open_read(working_directory + "talent_library.txt");
 	}
 	if (file == -1)
 	{
@@ -30,7 +34,6 @@ if (category != parentMenu.menuOptions[parentMenu.activeIndex])
 	}
 	file_text_close(file);
 	var libraryMap = json_decode(str);
-	show_debug_message(str);
 	
 	// Get ability names and sort them alphabetically
 	var numAbilities = ds_map_size(libraryMap);
@@ -49,7 +52,6 @@ if (category != parentMenu.menuOptions[parentMenu.activeIndex])
 
 	// (Re)set menu options using this list of names
 	menuOptions = [];
-	show_debug_message(menuOptions);
 	for (var i = 0; i < numAbilities; i++)
 	{
 		menuOptions[i] = namesList[|i];

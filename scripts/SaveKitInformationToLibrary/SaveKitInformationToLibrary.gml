@@ -16,7 +16,7 @@ for (var i = 0; i < instance_number(obj_textbox); i++)
 if (kitName != "")
 {
 	// Read the Kit Library file into the variable kitLibraryMap
-	var file = file_text_open_read(working_directory + "\kit_library.txt");
+	var file = file_text_open_read(working_directory + "kit_library.txt");
 	if (file == -1)
 	{
 		show_debug_message("Opening file to read failed");
@@ -34,7 +34,7 @@ if (kitName != "")
 	ds_map_replace_map(kitLibraryMap, kitName, kitMap);
 
 	// Save the altered library object
-	file = file_text_open_write(working_directory + "\kit_library.txt");
+	file = file_text_open_write(working_directory + "kit_library.txt");
 	if (file == -1)
 	{
 		show_debug_message("Opening file to write failed");

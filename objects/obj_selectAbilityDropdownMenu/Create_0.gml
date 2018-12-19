@@ -10,7 +10,7 @@ scriptOnOptionClick = 1;
 parentMenu = inst_5DD9CB09;
 category = parentMenu.menuOptions[parentMenu.activeIndex];
 // Load kit information and put it into a ds_map
-var file = file_text_open_read(working_directory + "\kit_library.txt");
+var file = file_text_open_read(working_directory + "kit_library.txt");
 if (file == -1)
 {
 	show_debug_message("Opening file to read failed");
