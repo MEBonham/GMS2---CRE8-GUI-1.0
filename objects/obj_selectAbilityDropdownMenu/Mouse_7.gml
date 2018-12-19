@@ -8,4 +8,9 @@ if (clickStart and open)
 		currentOpenOptions[i].customColor = ColorByType(string_lower(category));
 		currentOpenOptions[i].customFont = fnt_arial;
 	}
+	instance_deactivate_object(obj_generateButton);
+}
+else if (clickStart and !open)
+{
+	instance_activate_object(obj_generateButton);
 }

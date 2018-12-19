@@ -1,6 +1,5 @@
 var name = argument0[0];
 var _category = argument0[2];
-show_debug_message(_category);
 
 var file;
 switch (_category)
@@ -28,8 +27,6 @@ while (!file_text_eof(file))
 file_text_close(file);
 var libraryMap = json_decode(str);
 
-show_debug_message(str);
-show_debug_message(name);
 var abilityInfo = ds_map_find_value(libraryMap, name);
 ds_map_replace(abilityInfo, "name", name);
 

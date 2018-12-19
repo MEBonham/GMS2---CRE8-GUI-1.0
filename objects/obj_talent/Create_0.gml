@@ -2,5 +2,5 @@
 // You can write your code in this editor
 event_inherited();
 
-type = "kit";
+type = "talent";
 name = "";
