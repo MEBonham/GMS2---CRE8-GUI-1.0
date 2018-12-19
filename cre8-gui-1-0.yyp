@@ -103,6 +103,22 @@
             }
         },
         {
+            "Key": "2224a078-abf3-4c54-8b52-67f8518831db",
+            "Value": {
+                "id": "67983941-a077-4b0c-a37f-0cfa81671f00",
+                "resourcePath": "sprites\\spr_redGlow\\spr_redGlow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "245143fd-8f5d-474f-b55f-1f71bfdbffbe",
+            "Value": {
+                "id": "0f744f48-9654-4c3b-986f-8fb9d11ec388",
+                "resourcePath": "objects\\obj_charStats\\obj_charStats.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2741d051-40fe-4d95-a5eb-f7f3ff4e26f7",
             "Value": {
                 "id": "69fd8ac4-2beb-49f3-a013-f1fb2b3c713c",
@@ -327,6 +343,14 @@
             }
         },
         {
+            "Key": "7a1d6e60-423c-4c6f-985e-946821782676",
+            "Value": {
+                "id": "776e36a6-00a5-4c94-b40a-e3847cdf36dd",
+                "resourcePath": "scripts\\CalcLevelFromXp\\CalcLevelFromXp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7a722af7-bccf-4e10-b6ef-1d2831e6ac70",
             "Value": {
                 "id": "29efb9be-b046-45b8-a34e-72ba73de79eb",
@@ -412,6 +436,14 @@
                 "id": "703200b8-7dc6-4b49-8035-eb3b96fff57e",
                 "resourcePath": "scripts\\CloseLoadKitDialogInitial\\CloseLoadKitDialogInitial.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "adbcaaff-d615-499d-933f-8db6b52d5d15",
+            "Value": {
+                "id": "329a0452-1b2a-44e9-acd8-578bd12b06d6",
+                "resourcePath": "sprites\\spr_parchment\\spr_parchment.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -601,7 +633,8 @@
         "450cd5fe-f346-4714-8ce5-62fbd0430e21",
         "c306634e-a0b9-4ca8-b92c-42bb37a203e1",
         "4c1cded6-c4a2-4dd9-8199-b20b1f6fce96",
-        "612b5ee0-6974-4697-9eb4-905c3a44a0f6"
+        "612b5ee0-6974-4697-9eb4-905c3a44a0f6",
+        "7a1d6e60-423c-4c6f-985e-946821782676"
     ],
     "tutorial": ""
 }
