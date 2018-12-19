@@ -3,7 +3,7 @@ if (hover)
 {
 	var pale_yellow = make_color_rgb(255, 255, 191);
 	draw_set_color(pale_yellow);
-	draw_rectangle(mouse_x, mouse_y, mouse_x + 310, mouse_y + 32, false);
+	draw_rectangle(mouse_x, mouse_y, mouse_x + 155, mouse_y + 32, false);
 	
 	draw_set_color(c_black);
 	draw_set_font(fnt_maximumImpact20);
