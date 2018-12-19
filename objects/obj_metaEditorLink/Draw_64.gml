@@ -7,6 +7,7 @@ if (hover)
 	
 	draw_set_color(c_black);
 	draw_set_font(fnt_maximumImpact20);
+	draw_set_valign(fa_middle);
 	draw_set_halign(fa_left);
 	draw_text(mouse_x + 6, mouse_y + 16, "Go to meta-editor");
 }

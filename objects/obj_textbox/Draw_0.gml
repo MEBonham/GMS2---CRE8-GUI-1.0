@@ -19,10 +19,6 @@ draw_text(xTopLeft, yTopLeft + 8, name);
 
 draw_set_color(ColorByType(type));
 draw_set_font(fontHere);
-draw_set_valign(fa_bottom);
-draw_text_ext(xTopLeft + xOffText,
-	yTopLeft + yOffText + (lineHeight * string_count("\n", text)),
-	//yTopLeft + yOffText + font_get_size(fontHere),
-	text,
-	lineHeight,
-	sprite_width - 64);
+draw_set_valign(fa_top);
+draw_text_ext(xTopLeft + xOffText, yTopLeft + yOffText,	text, lineHeight,
+	sprite_width - 2 * xOffText);
