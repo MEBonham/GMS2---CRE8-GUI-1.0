@@ -13,6 +13,13 @@ if (clickStart)
 			currentOpenOptions[i].parentLink = id;
 			currentOpenOptions[i].text = menuOptions[i];
 			currentOpenOptions[i].index = i;
+			currentOpenOptions[i].depth -= 1;
+			
+			if (scriptOnOptionClick)
+			{
+				currentOpenOptions[i].scriptOnClick = scriptOnClick;
+				currentOpenOptions[i].scriptArgs = [menuOptions[i], i, otherArgs];
+			}
 		}
 		open = 1;
 	}

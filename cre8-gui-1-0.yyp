@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "4c1cded6-c4a2-4dd9-8199-b20b1f6fce96",
+            "Value": {
+                "id": "8f7cc3e1-b6a9-4f95-a44e-c4d1a8edab58",
+                "resourcePath": "scripts\\LoadAbilityInfoDisplay\\LoadAbilityInfoDisplay.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4d9419f7-b8ff-45f9-9918-009cbe763d0d",
             "Value": {
                 "id": "1beaab37-9a58-4334-a6fe-1bae06414d69",
@@ -228,6 +236,14 @@
                 "id": "0de80c76-d480-4a83-832f-c5ec084b7770",
                 "resourcePath": "sprites\\spr_dropdownMenu\\spr_dropdownMenu.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5f8c5dec-de60-448d-aa0c-21de5c5b6c79",
+            "Value": {
+                "id": "ede80bae-6324-4c67-a141-f0d1bf0d3d21",
+                "resourcePath": "objects\\obj_selectAbilityDropdownMenu\\obj_selectAbilityDropdownMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -519,7 +535,8 @@
         "92dae44b-c674-4e28-93e0-741b36b00d27",
         "a122a0bc-f7da-4a9f-a77c-13eaa447f9c9",
         "450cd5fe-f346-4714-8ce5-62fbd0430e21",
-        "c306634e-a0b9-4ca8-b92c-42bb37a203e1"
+        "c306634e-a0b9-4ca8-b92c-42bb37a203e1",
+        "4c1cded6-c4a2-4dd9-8199-b20b1f6fce96"
     ],
     "tutorial": ""
 }
