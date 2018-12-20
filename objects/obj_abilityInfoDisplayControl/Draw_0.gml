@@ -1,11 +1,13 @@
 /// @description Draw all the ability's text to the panel
 if (contents)
 {
+	// Constants defining the panel and section spacing
 	var width = 410;
 	var blockHeight = 200;
 	var centerOffset = 214;
 	var yBuffer = 20;
-	
+
+	// Draw title and tags
 	draw_set_color(c_black);
 	var yOffset = 0;
 	
@@ -24,6 +26,7 @@ if (contents)
 		yOffset += 20 + yBuffer;
 	}
 	
+	// Draw main text (on a surface)
 	draw_set_font(fnt_arial);
 	var yScroll = 0;
 
@@ -61,27 +64,9 @@ if (contents)
 	}
 	
 	surface_set_target(panel);
-		draw_clear_alpha(c_white, 0);
+		draw_clear_alpha(c_black, 0);
 		draw_text_ext(0, yScroll, mainText, -1, width);
 	surface_reset_target();
 	draw_surface(panel, x, y + yOffset);
 	
-	//if (string_height_ext(strTot, -1, width) <= blockHeight)
-	//{
-	//	draw_text_ext(x, y + yOffset, strTot, -1, width);
-	//	if (scr)
-	//	{
-	//		instance_destroy(scr.a);
-	//		instance_destroy(scr);
-	//		scr = false;
-	//	}
-	//}
-	//else
-	//{
-	//	if (!scr)
-	//	{
-
-	//	}
-	//}
-
 }
