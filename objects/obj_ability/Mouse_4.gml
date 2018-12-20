@@ -1,23 +1,26 @@
 /// @description Start dragging
 // You can write your code in this editor
 
-dragging = 1;
-anchorX = x;
-anchorY = y;
-mAnchorX = mouse_x;
-mAnchorY = mouse_y;
+if (!deleting)
+{
+	dragging = 1;
+	anchorX = x;
+	anchorY = y;
+	mAnchorX = mouse_x;
+	mAnchorY = mouse_y;
+}
 
 // If more than one obj_ability is being dragged, drag only the top one
 // Find ids of all instances being dragged
 var numFound = 0;
-var idsArray;
+var idsArray = [];
 for (var i = 0; i < instance_number(obj_ability); i += 1)
 {
 	var curObj = instance_find(obj_ability, i);
 	if (curObj.dragging)
 	{
 		idsArray[numFound] = curObj;
-		numFound += 1;
+		numFound ++;
 	}
 }
 if (array_length_1d(idsArray) > 1)

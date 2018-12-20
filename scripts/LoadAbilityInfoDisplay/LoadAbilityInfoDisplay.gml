@@ -38,4 +38,5 @@ with (obj_abilityInfoDisplayControl)
 	}
 	contents = abilityInfo;
 	category = _category;
+	event_user(0)
 }

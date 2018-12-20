@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01c7933a-dd74-4980-bc68-6b3e85ceccea",
+            "Value": {
+                "id": "c7372f94-b920-437f-9758-0585fd171653",
+                "resourcePath": "sprites\\spr_blueField\\spr_blueField.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0332a7cb-1287-483d-b342-c36021fe1004",
             "Value": {
                 "id": "c2641f41-dd16-48a6-a62c-498e6ce273fb",
@@ -84,6 +92,14 @@
                 "id": "d84c747d-3d63-43f3-8754-3a0bfd867228",
                 "resourcePath": "fonts\\fnt_arial\\fnt_arial.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "1b5494a8-b078-4c16-b4a1-bb2f43e026d2",
+            "Value": {
+                "id": "49a562a5-6fdb-42d5-80d5-1560813df55e",
+                "resourcePath": "objects\\obj_scrollWheelField\\obj_scrollWheelField.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "565b98c2-2278-486e-b25f-69ac5b8f1575",
+            "Value": {
+                "id": "50888fed-7c48-4a76-bd5e-7a421e9279f3",
+                "resourcePath": "sprites\\spr_scrollbar\\spr_scrollbar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "56939850-80e1-4f1d-a336-abb1d4cd00be",
             "Value": {
                 "id": "613d22f8-b8ad-408d-9648-81629e72f0d3",
@@ -375,14 +399,6 @@
             }
         },
         {
-            "Key": "908fe198-5780-4dae-83cf-2d3378d1083a",
-            "Value": {
-                "id": "5f3e2331-aa63-4c1c-96e4-d58f544a24ca",
-                "resourcePath": "datafiles_yy\\kit_library.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "9115b9eb-75e0-480d-acdb-dc3439f59dbd",
             "Value": {
                 "id": "e77d1a1c-67d0-40f7-bf8d-5719e5155a01",
@@ -396,6 +412,14 @@
                 "id": "bca7b14d-2ea6-43f1-91a2-68386b8e5fba",
                 "resourcePath": "scripts\\CloseLoadKitDialog\\CloseLoadKitDialog.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9389a14a-1425-4e60-88c4-72d80fce7d5b",
+            "Value": {
+                "id": "82f74a24-a44d-4aaf-83b2-6b5f55ecf802",
+                "resourcePath": "objects\\obj_scrollbar\\obj_scrollbar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -519,6 +543,14 @@
             }
         },
         {
+            "Key": "d12fc2af-0309-4927-a048-8caf4bee5c77",
+            "Value": {
+                "id": "2e6db9f8-9de9-40bd-ad24-9f95e2028694",
+                "resourcePath": "sprites\\spr_woodenBead\\spr_woodenBead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d403037d-a8c6-44a8-b1a8-d2b0db49b0c6",
             "Value": {
                 "id": "b4dd9dff-1eaf-476a-996b-a4324114387c",
@@ -532,6 +564,14 @@
                 "id": "5c65218c-5ae9-4f37-88c4-f81a49e49521",
                 "resourcePath": "objects\\obj_saveButton\\obj_saveButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d7264900-67a0-4c9d-adcc-32a46461f5b8",
+            "Value": {
+                "id": "f43c3290-abf8-47eb-a395-55c8709df066",
+                "resourcePath": "sprites\\spr_abilityThinner\\spr_abilityThinner.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -556,6 +596,14 @@
                 "id": "361c651c-ba7b-4ea3-85e3-fe64442e217a",
                 "resourcePath": "sprites\\spr_reloadIcon\\spr_reloadIcon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e341ff74-fc19-4ef5-b042-0a203aaa2bbc",
+            "Value": {
+                "id": "94b4df6a-f9ef-4fd5-9769-0894c03384a6",
+                "resourcePath": "objects\\obj_scrollBead\\obj_scrollBead.yy",
+                "resourceType": "GMObject"
             }
         },
         {

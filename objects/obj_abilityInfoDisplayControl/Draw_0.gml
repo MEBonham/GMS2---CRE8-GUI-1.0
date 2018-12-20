@@ -2,6 +2,7 @@
 if (contents)
 {
 	var width = 410;
+	var blockHeight = 200;
 	var centerOffset = 214;
 	var yBuffer = 20;
 	
@@ -12,7 +13,7 @@ if (contents)
 	draw_set_halign(fa_center);
 	draw_set_font(fnt_maximumImpact30);
 	draw_text(x + centerOffset, y + yOffset, contents[?"name"]);
-	yOffset += 44;
+	yOffset += 48;
 	draw_set_halign(fa_left);
 	
 	if (ds_map_exists(contents, "tags") and contents[?"tags"] != "")
@@ -23,35 +24,64 @@ if (contents)
 		yOffset += 20 + yBuffer;
 	}
 	
-	if (ds_map_exists(contents, "prereqs") and contents[?"prereqs"] != "")
+	draw_set_font(fnt_arial);
+	var yScroll = 0;
+
+	if (string_height_ext(mainText, -1, width) <= blockHeight)
 	{
-		var str = "Prerequisites:\n" + contents[?"prereqs"];
-		draw_set_font(fnt_arial);
-		draw_text_ext(x, y + yOffset, str, -1, width);
-		yOffset += yBuffer + string_height_ext(str, -1, width);
+		if (scr)
+		{
+			instance_destroy(scr.a);
+			instance_destroy(scr.f);
+			instance_destroy(scr);
+			scr = false;
+		}
+	}
+	else
+	{
+		if (!scr)
+		{
+			scr = instance_create_layer(
+				x + width + 16,
+				y + yOffset + blockHeight / 2,
+				layer, obj_scrollbar);
+			scr.image_yscale = blockHeight / scr.sprite_height;
+			scr.f = instance_create_layer(x, y + yOffset, layer, obj_scrollWheelField);
+			scr.f.parentLink = scr;
+			scr.f.image_yscale = blockHeight / scr.f.sprite_height;
+			scr.f.image_xscale = width / scr.f.sprite_width;
+		}
+		var overshoot = string_height_ext(mainText, -1, width) - blockHeight;
+		yScroll = 0 - overshoot * scr.fraction;
 	}
 
-	if (ds_map_exists(contents, "benefits") and contents[?"benefits"] != "")
+	if (!surface_exists(panel))
 	{
-		var str = "Benefits:\n" + contents[?"benefits"];
-		draw_set_font(fnt_arial);
-		draw_text_ext(x, y + yOffset, str, -1, width);
-		yOffset += yBuffer + string_height_ext(str, -1, width);
+		panel = surface_create(width, blockHeight);
 	}
+	
+	surface_set_target(panel);
+		draw_clear_alpha(c_white, 0);
+		draw_text_ext(0, yScroll, mainText, -1, width);
+	surface_reset_target();
+	draw_surface(panel, x, y + yOffset);
+	
+	//if (string_height_ext(strTot, -1, width) <= blockHeight)
+	//{
+	//	draw_text_ext(x, y + yOffset, strTot, -1, width);
+	//	if (scr)
+	//	{
+	//		instance_destroy(scr.a);
+	//		instance_destroy(scr);
+	//		scr = false;
+	//	}
+	//}
+	//else
+	//{
+	//	if (!scr)
+	//	{
 
-	if (ds_map_exists(contents, "drawbacks") and contents[?"drawbacks"] != "")
-	{
-		var str = "Drawbacks:\n" + contents[?"drawbacks"];
-		draw_set_font(fnt_arial);
-		draw_text_ext(x, y + yOffset, str, -1, width);
-		yOffset += yBuffer + string_height_ext(str, -1, width);
-	}
+	//	}
+	//}
 
-	if (ds_map_exists(contents, "xpParcels") and contents[?"xpParcels"] != "")
-	{
-		var str = "XP Parcels:\n" + contents[?"xpParcels"];
-		draw_set_font(fnt_arial);
-		draw_text_ext(x, y + yOffset, str, -1, width);
-		yOffset += yBuffer + string_height_ext(str, -1, width);
-	}
 }
