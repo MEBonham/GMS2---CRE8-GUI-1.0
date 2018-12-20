@@ -10,10 +10,10 @@
         "200e4161-0f45-403a-98ec-798617c1767e",
         "9389a14a-1425-4e60-88c4-72d80fce7d5b",
         "e341ff74-fc19-4ef5-b042-0a203aaa2bbc",
+        "1b5494a8-b078-4c16-b4a1-bb2f43e026d2",
         "44a1a56d-296a-4c20-9546-353a0c789d89",
         "f32a21bb-6302-4b13-90bc-180ebd7aa1c0",
-        "ed61f79c-4ff0-4e70-85d8-ab0ec8ca12c3",
-        "1b5494a8-b078-4c16-b4a1-bb2f43e026d2"
+        "ed61f79c-4ff0-4e70-85d8-ab0ec8ca12c3"
     ],
     "filterType": "GMObject",
     "folderName": "User Interface",

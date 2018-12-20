@@ -7,6 +7,10 @@ if (active)
 	{
 		text += string(keyboard_string);
 		keyboard_string = "";
+		if (scr)
+		{
+			scr.a.y = scr.yBottom;
+		}
 	}
 	
 	if (keyboard_check_pressed(vk_enter))

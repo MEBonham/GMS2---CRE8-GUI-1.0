@@ -2,7 +2,7 @@ name = "Name";
 code = "name";
 type = "kit";
 
-xOffText = 16;
+xOffText = 18;
 yOffText = 16;
 fontHere = fnt_maximumImpact20;
 
