@@ -37,6 +37,7 @@ with (obj_abilityInfoDisplayControl)
 		ds_map_destroy(contents);
 	}
 	contents = abilityInfo;
+	show_debug_message(contents);
 	category = _category;
-	event_user(0)
+	event_user(0);
 }

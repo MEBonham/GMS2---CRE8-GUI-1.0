@@ -29,12 +29,29 @@ if (numKits > 0)
 ds_list_sort(namesList, true);
 
 // Iterate through sorted names and create buttons for them
-var yOffset = 10;
+var xOffset = 183;
+var yOffset = rowHeight;
+var newColumnSet = false;
 for (var i = 0; i < numKits; i++)
 {
-	yOffset += 30;
-	currentOpenOptions[i] =
-		instance_create_layer(x, y + yOffset, layer, obj_dropdownMenuOption);
+	yOffset += rowHeight;
+	if (i <= numKits / 2)
+	{
+		currentOpenOptions[i] =
+			instance_create_layer(x - 25, y + yOffset, layer,
+				obj_dropdownMenuOption);
+	}
+	else
+	{
+		if (!newColumnSet)
+		{
+			newColumnSet = true;
+			yOffset = rowHeight * 2;
+		}
+		currentOpenOptions[i] =
+			instance_create_layer(x - 25 + xOffset, y + yOffset,
+				layer, obj_dropdownMenuOption);
+	}
 	currentOpenOptions[i].parentLink = id;
 	currentOpenOptions[i].text = namesList[|i];
 	currentOpenOptions[i].scriptOnClick = LoadKitSelectOption;
@@ -45,3 +62,35 @@ for (var i = 0; i < numKits; i++)
 	currentOpenOptions[i].scriptArgs[2] = kitLibraryMap;
 }
 ds_list_destroy(namesList);
+
+// Implement or cancel scrolling
+if (numKits > 2 * maxNumRows)
+{
+	var blockHeight = maxNumRows * rowHeight;
+	var blockWidth = 400;
+	if (!scr)
+	{
+		scr = instance_create_layer(x + blockWidth - 135,
+			y + rowHeight + blockHeight / 2 + 14,
+			layer, obj_scrollbar);
+		scr.image_yscale = blockHeight / scr.sprite_height;
+		scr.f = instance_create_layer(x - 135, y + rowHeight + 14,
+			layer, obj_scrollWheelField);
+		scr.f.parentLink = scr;
+		scr.f.image_yscale = blockHeight / scr.f.sprite_height;
+		scr.f.image_xscale = blockWidth / scr.f.sprite_width;
+		
+		numButtons = numKits;
+	}
+}
+else
+{
+	if (scr)
+	{
+		instance_destroy(scr.a);
+		instance_destroy(scr.f);
+		instance_destroy(scr);
+		scr = false;
+		numButtons = false;
+	}
+}

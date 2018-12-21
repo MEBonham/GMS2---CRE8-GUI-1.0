@@ -52,7 +52,6 @@ else
 		scr.f.image_yscale = sprite_height / scr.f.sprite_height;
 		scr.f.image_xscale = sprite_width / scr.f.sprite_width;
 		scr.f.divisor = 10;
-		//object_set_visible(scr.f, true);
 	}
 	
 	var overshoot = 

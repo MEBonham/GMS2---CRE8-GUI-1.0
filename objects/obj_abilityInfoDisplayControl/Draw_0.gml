@@ -1,4 +1,5 @@
 /// @description Draw all the ability's text to the panel
+show_debug_message(json_encode(contents));
 if (contents)
 {
 	// Constants defining the panel and section spacing
@@ -8,6 +9,7 @@ if (contents)
 	var yBuffer = 20;
 
 	// Draw title and tags
+	draw_set_alpha(1);
 	draw_set_color(c_black);
 	var yOffset = 0;
 	
