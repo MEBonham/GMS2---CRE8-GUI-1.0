@@ -36,12 +36,11 @@ ds_map_replace(abilityInfo, "name", name);
 with (obj_abilityInfoDisplayControl)
 {
 	//if (contents and (json_encode(contents) != json_encode(abilityInfo)))
-	//if (contents)
-	//{
-	//	ds_map_destroy(contents);
-	//}
+	if (contents)
+	{
+		ds_map_destroy(contents);
+	}
 	contents = abilityInfo;
-	show_debug_message(contents);
 	category = _category;
 	event_user(0);
 }

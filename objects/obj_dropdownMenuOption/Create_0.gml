@@ -7,4 +7,3 @@ customColor = false;
 customFont = false;
 
 libraryMap = -1;
-show_debug_message(json_encode(libraryMap));
