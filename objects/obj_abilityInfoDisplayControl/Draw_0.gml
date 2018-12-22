@@ -1,5 +1,4 @@
 /// @description Draw all the ability's text to the panel
-show_debug_message(json_encode(contents));
 if (contents)
 {
 	// Constants defining the panel and section spacing
