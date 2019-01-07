@@ -23,7 +23,7 @@ with (obj_loadKitDialogControl)
 
 with (obj_dropdownMenuOption)
 {
-	if (layer == layer_get_id("Load_popup_controls"))
+	if (layer == layer_get_id("Load_popup_buttons"))
 	{
 		instance_destroy();
 	}

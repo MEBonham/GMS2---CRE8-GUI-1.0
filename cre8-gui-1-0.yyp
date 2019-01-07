@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "b3ba8aa8-e1ae-468d-be3a-8b7c0602de48",
+            "Value": {
+                "id": "03908fa3-21da-4d66-b422-04f6613dc728",
+                "resourcePath": "objects\\obj_scrollableDropdownOption\\obj_scrollableDropdownOption.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b7008ac9-33db-4799-87e1-4c49946d4541",
             "Value": {
                 "id": "ab4d7c69-fd73-438b-9240-0a513798c880",

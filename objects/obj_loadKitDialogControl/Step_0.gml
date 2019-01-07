@@ -5,16 +5,20 @@ if (scr)
 	var overshotRows = numRowsTot - maxNumRows;
 	var yRowsOffset = round(overshotRows * scr.fraction);
 	
-	for (var i = 0; i < instance_number(obj_dropdownMenuOption); i++)
+	for (var i = 0; i < instance_number(obj_scrollableDropdownOption); i++)
 	{
-		curOption = instance_find(obj_dropdownMenuOption, i);
-		if (layer == curOption.layer)
+		curOption = instance_find(obj_scrollableDropdownOption, i);
+		if (curOption.layer == layer_get_id("Load_popup_buttons"))
 		{
 			curOption.y = curOption.ystart - rowHeight * yRowsOffset;
-			if (curOption.y < yTop or curOption.y > yBottom)
-			{
-				instance_deactivate_object(curOption);
-			}
+			//if (curOption.y < yTop or curOption.y > yBottom)
+			//{
+			//	//instance_deactivate_object(curOption);
+			//	with (curOption)
+			//	{
+			//		alarm_set(0, 1);
+			//	}
+			//}
 		}
 	}
 }

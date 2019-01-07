@@ -27,19 +27,20 @@ if (numKits > 0)
 	}
 }
 ds_list_sort(namesList, true);
-
 // Iterate through sorted names and create buttons for them
 var xOffset = 183;
 var yOffset = rowHeight;
 var newColumnSet = false;
+var 
 for (var i = 0; i < numKits; i++)
 {
 	yOffset += rowHeight;
 	if (i <= numKits / 2)
 	{
 		currentOpenOptions[i] =
-			instance_create_layer(x - 25, y + yOffset, layer,
-				obj_dropdownMenuOption);
+			instance_create_layer(x - 25, y + yOffset, 
+				layer_get_id("Load_popup_buttons"),
+				obj_scrollableDropdownOption);
 	}
 	else
 	{
@@ -50,7 +51,8 @@ for (var i = 0; i < numKits; i++)
 		}
 		currentOpenOptions[i] =
 			instance_create_layer(x - 25 + xOffset, y + yOffset,
-				layer, obj_dropdownMenuOption);
+				layer_get_id("Load_popup_buttons"),
+				obj_scrollableDropdownOption);
 	}
 	currentOpenOptions[i].parentLink = id;
 	currentOpenOptions[i].text = namesList[|i];
